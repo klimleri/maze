@@ -1,0 +1,11 @@
+body {
+    text-align: center;
+}
+
+img {
+    display:none;
+}
+
+canvas {
+    background: #fff;
+}
