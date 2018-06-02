@@ -9,3 +9,12 @@ img {
 canvas {
     background: #fff;
 }
+
+.swal-button {
+    background-color: #4CAF50;
+    outline: none;
+}
+
+.swal-button:focus {
+    box-shadow: none;
+}

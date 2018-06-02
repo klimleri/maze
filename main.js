@@ -135,7 +135,11 @@ function drawFrame(code) {
         context.drawImage(imgFace, x, y);
 
         if (y >= (canvas.height - 11)) {
-            alert("Level " + levelCount + "completed!");
+            swal({
+                title: "Level " + levelCount + " completed!",
+                icon: "success",
+                button: "Next level",
+            });
             levelCount++;
 
             if(levelCount < 6) {
@@ -148,7 +152,9 @@ function drawFrame(code) {
 
                 window.onkeydown = processKey;
             } else {
-                alert('You win!')
+                 swal({
+                    title: "You win!",
+                });
             }
 
         }
