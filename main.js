@@ -4,7 +4,7 @@ var context;
 var level = document.querySelector('#level span');
 var levelCount = 1;
 
-var imgFace;
+var imgFace = document.getElementById("face");
 
 var x = 0;
 var y = 0;
@@ -37,7 +37,6 @@ function drawMaze(mazeFile) {
         x = startPoint();
         y = 1;
 
-        imgFace = document.getElementById("face");
         context.drawImage(imgFace, x, y);
         context.stroke();
 
